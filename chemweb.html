@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethanol As Gas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <video autoplay muted loop id="video-background">
+        <source src="/static/background-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Toggle Button for Sidebar -->
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+
+    <!-- Sidebar Section -->
+    <div class="sidebar" id="sidebar">
+        <a href="/">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Overlay for background image -->
+    <div class="background-overlay" id="background-overlay"></div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+        <header id="header">
+            <div class="logo">
+                <h1>Ethanol As Gas</h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="intro">
+                <h2>Steal Your Heart</h2>
+                <p>Welcome to the Phantom Thieves' secret lair. We’re here to change hearts and reform society!</p>
+            </section>
+            <section class="cards">
+                <a href="/joker" class="card" onmouseover="changeBackground('/static/url1.jpg')" onmouseout="resetBackground()">
+                    <h3>Lesson</h3>
+                    <p>Information about Ethanol.</p>
+                </a>
+                <a href="/morgana2" class="card" onmouseover="changeBackground('/static/url2.jpg')" onmouseout="resetBackground()">
+                    <h3>Quiz</h3>
+                    <p>Test your knowledge.</p>
+                </a>
+                <div class="card" onmouseover="changeBackground('/static/url3.jpg')" onmouseout="resetBackground()">
+                    <h3>Le creators</h3>
+                    <p>Group members and Professor.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Phantom Thieves. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
