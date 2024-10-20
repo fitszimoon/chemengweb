@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joker Info</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <button class="toggle-btn" onclick="toggleSidebar()">☰ Menu</button>
+
+    <div class="sidebar" id="sidebar">
+        <a href="/">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="main-content" id="main-content">
+        <header id="header">
+            <div class="logo">
+                <h1>Input title</h1>
+            </div>
+        </header>
+
+        <div class="info-page">
+            <h2>Input subtitle</h2>
+            <p>Input text.</p>
+            <p>Input text.</p>
+            <button class="next-btn" onclick="window.location.href='/morgana'">Next: Morgana</button>
+            <button class="back-btn" onclick="window.location.href='/'">Home</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
